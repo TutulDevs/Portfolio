@@ -1,0 +1,14 @@
+/*        Pre Format
+************************************/
+:root {
+    --black: #333;
+    --white: #dddddd;
+
+    --linkCol: #22CD92;
+    --linkColHov: #2A9D8F;
+    --transition: 0.5s linear;
+
+    --bgLight: linear-gradient(35deg, rgb(235, 235, 235), rgb(238, 237, 238), rgb(241, 240, 241), rgb(244, 242, 243), rgb(247, 245, 246), rgb(250, 247, 249), rgb(247, 245, 246), rgb(244, 242, 243), rgb(241, 240, 241), rgb(238, 237, 238), rgb(235, 235, 235), rgb(232, 232, 232));
+
+    --bgDark: linear-gradient(-35deg, rgb(13, 13, 13), rgb(20, 20, 20), rgb(27, 27, 27), rgb(34, 34, 34), rgb(41, 41, 41), rgb(48, 48, 48), rgb(41, 41, 41), rgb(33, 33, 33), rgb(26, 26, 26), rgb(18, 18, 18), rgb(11, 11, 11), rgb(3, 3, 3));
+}

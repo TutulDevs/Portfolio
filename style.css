@@ -1,0 +1,55 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Open+Sans:wght@300;400;600&display=swap');
+/*
+font-family: 'Lobster Two', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--black);
+    background: var(--bgLight);
+    position: relative;
+    z-index: 1;
+    transition: all var(--transition);
+}
+main::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--bgDark);
+    opacity: 0;
+    transition: all var(--transition);
+}
+
+
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 5%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}

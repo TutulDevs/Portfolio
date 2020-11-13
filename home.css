@@ -1,0 +1,85 @@
+/*        HOME Section
+************************************/
+.home {
+    background: url(img/code-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-size: 15rem;
+}
+.home__header {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home__header .logo {
+    transition: var(--transition);
+}
+
+.home__header--nav {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.home__header--nav li {
+    height: 100%;
+    margin: 0 0.5rem;
+    display: grid;
+    place-items: center;
+}
+.home__header--nav a {
+    padding: 1rem;
+    color: var(--linkCol);
+    font-size: 1.75rem;
+    transition: var(--transition);
+}
+.home__header--nav a:hover {
+    color: var(--linkColHov);
+}
+
+.home__body {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home__body h3 ,
+.home__body p {
+    padding-left: 0.5rem;
+}
+
+.home__body .home__body--title {
+    font-size: 20vmin;
+    line-height: 1.2;
+    padding: 0;
+}
+.home__body .home__body--title .name {
+    font-family: 'Lobster Two', cursive;
+    background: -webkit-linear-gradient(-115deg, var(--linkColHov), var(--linkCol));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.toggler {
+    border: 0;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    position: relative;
+    background: transparent;
+}
+.toggler::before {
+    content: '🔅';
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right;
+    0;
+    width: 100%;
+    height: 80%;
+}

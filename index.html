@@ -4,35 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dark Mode</title>
+    <title>TutulDevs</title>
     <link rel="stylesheet" href="vars.css" type="text/css" media="all" />
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="home.css" type="text/css" media="all" />
 <style type="text/css" media="all">
-
-/*        HOME Section  Responsive
-************************************/
-
-
-
-.home__header {height:20vh;
-display: flex;justify-content: space-between;align-items: center;}
-.home__header .logo{transition:var(--transition);}
-
-.home__header--nav{width:80%;height:100%;
-    display: flex;justify-content: flex-end; align-items: center;
-}
-.home__header--nav li {height:100%;margin:0 0.5rem;display:grid;place-items:center;}
-.home__header--nav a {padding:1rem;color: var(--linkCol);font-size: 1.75rem;transition: var(--transition);}
-.home__header--nav a:hover {color:var(--linkColHov);}
-
-.home__body {height:80vh; 
-    display: flex;justify-content: center; flex-direction: column;
-}
-
-.home__body .home__body--title {font-size: 20vmin;line-height:1.2;padding:0;}
-
-.toggler{border:0;border-radius:50%; width:4rem;height:4rem;font-size:2rem;position:relative;background: transparent;}
 
 
 /************************************/
@@ -52,12 +28,21 @@ display: flex;justify-content: space-between;align-items: center;}
             <ul class="home__header--nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#uses">Uses</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="toggler">
                 <!-- <span>👻</span> --> 
             </button>
+            <button class="menu__btn">
+                <span class="box box1"></span>
+                <span class="box box2"></span>
+            </button>
         </div> <!-- HOME__Header -->
+        
         <div class="home__body">
             <h3>Hi there 👋</h3>
             <h1 class="home__body--title">I'm 
@@ -71,14 +56,7 @@ display: flex;justify-content: space-between;align-items: center;}
 </main>
     
     
-<script type="text/javascript" charset="utf-8">
-    const btn = document.querySelector('.toggler');
-    const main = document.querySelector('.main');
-    
-    btn.addEventListener('click', () => {
-        document.body.classList.toggle('dark'); 
-        //... on changing
-    });
-</script>
+
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

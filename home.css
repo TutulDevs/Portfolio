@@ -13,6 +13,8 @@
     align-items: center;
 }
 .home__header .logo {
+    font-size: 2.5rem;
+    margin-right: auto;
     transition: var(--transition);
 }
 
@@ -20,7 +22,7 @@
     width: 80%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .home__header--nav li {
@@ -63,13 +65,14 @@
     -webkit-text-fill-color: transparent;
 }
 
-.toggler {
-    border: 0;
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
+.toggler,
+.menu__btn {
     font-size: 2.5rem;
     position: relative;
+    border: 0;
+    width: 4.25rem;
+    height: 4rem;
+    margin-left: 1rem;
     background: transparent;
 }
 .toggler::before {
@@ -111,10 +114,6 @@
 ************************************/
 
 @media screen and (max-width:700px) {
-
-    .home__header .logo {
-        margin-right: auto;
-    }
 
     .home__header--nav {
         position: absolute;
@@ -180,11 +179,6 @@
         display: grid;
         justify-items: space-between;
         gap: 0.75rem;
-        border: 0;
-        width: 4.25rem;
-        height: 4rem;
-        margin-left: 1rem;
-        background: transparent;
     }
     .menu__btn .box {
         width: 1.5rem;

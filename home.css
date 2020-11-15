@@ -48,8 +48,8 @@
     flex-direction: column;
 }
 
-.home__body h3 ,
-.home__body p {
+.home__body h2 ,
+.home__body h4 {
     padding-left: 0.5rem;
 }
 
@@ -75,15 +75,20 @@
     margin-left: 1rem;
     background: transparent;
 }
+
 .toggler::before {
-    content: '🔅';
+    content: '';
+    background: url(img/moon.svg) no-repeat;
+    background-size: 85%;
+    width: inherit;
+    height: inherit;
     position: absolute;
-    top: 15%;
-    bottom: 0;
+    top: 0;
     left: 0;
-    right: 0;
-    width: 100%;
-    height: 80%;
+}
+
+.dark .toggler::before {
+    background: url(img/sun.svg);
 }
 
 /*        Menu Button

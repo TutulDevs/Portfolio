@@ -2,64 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Kamrul Hasan Tutul, Tutul, TutulDevs" />
+    <meta name="description" content="The Portfolio Site of TutulDevs" />
+    <meta name="keywords" content="Portfolio, HTML5, CSS3, JavaScript, Web Development, JS, Website Design, FrontEnd" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
     <title>TutulDevs</title>
     <link rel="stylesheet" href="vars.css" type="text/css" media="all" />
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="home.css" type="text/css" media="all" />
-<style type="text/css" media="all">
+    <style type="text/css" media="all">
 
 
-/************************************/
-.dark .main::before {opacity:1;}
-.dark .main{color:var(--white);}
-.dark .toggler::before{content:'🔆';}
-.dark .logo {transform:rotateY(180deg);}
-</style>
+
+        
+
+
+
+        
+        /************************************/
+        .dark .main::before {
+            opacity: 1;
+        }
+        .dark .main {
+            color: var(--white);
+        }
+        .dark .logo {
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 <body>
- 
-<main class="main">
-    <section id="home" class="home">
-        <div class="home__header">
-            <h2 class="logo">✌️</h2> 
-            
-            <ul class="home__header--nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blogs</a></li>
-                <li><a href="#uses">Uses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="toggler">
-                <!-- <span>👻</span> --> 
-                <span class="sr-only">Dark Mode Toggle</span>
-            </button>
-            <button class="menu__btn">
-                <span class="box box1"></span>
-                <span class="box box2"></span>
-                <span class="sr-only">Toggle Navigation Menu</span>
-            </button>
-        </div> <!-- HOME__Header -->
-        
-        <div class="home__body">
-            <h2>Hi there 👋</h2>
-            <h1 class="home__body--title">I'm 
-                <span class="name">Tutul</span>
-            </h1>
-            <h4>I believe in JavaScript</h4> 
-        </div><!-- HOME-Body -->
-        
-    </section>
-    <!-- // HOME -->
-</main>
-    
-    
 
-<script src="app.js" type="text/javascript" charset="utf-8"></script>
+    <main class="main">
+        <section id="home" class="home">
+            <div class="home__header">
+                <h2 class="logo">✌️</h2>
+
+                <ul class="home__header--nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blogs</a></li>
+                    <li><a href="#uses">Uses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="toggler">
+                    <!-- <span>👻</span> -->
+                    <span class="sr-only">Dark Mode Toggle</span>
+                </button>
+                <button class="menu__btn">
+                    <span class="box box1"></span>
+                    <span class="box box2"></span>
+                    <span class="sr-only">Toggle Navigation Menu</span>
+                </button>
+            </div>
+            <!-- HOME__Header -->
+
+            <div class="home__body">
+                <h2>Hi there 👋</h2>
+                <h1 class="home__body--title">I'm
+                    <span class="name">Tutul</span>
+                </h1>
+                <h4>I believe in JavaScript</h4>
+            </div>
+            <!-- HOME-Body -->
+
+        </section>
+        <!-- // HOME -->
+    </main>
+
+
+
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

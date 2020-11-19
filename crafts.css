@@ -1,0 +1,214 @@
+.crafts {
+    background-image: var(--bgCrafts);
+}
+.crafts::before {
+    background-image: var(--bgCraftsDark);
+}
+
+.crafts__btn {
+    min-height: 15vh;
+    padding: 1.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.btnCraft {
+    min-width: 10rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--black);
+    background: transparent;
+    margin: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--linkColHov);
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+.btnCraft:hover {
+    transform: scale(1.1);
+    background: var(--linkColHov);
+}
+.btnCraft:hover,
+.dark .btnCraft {
+    color: var(--white);
+}
+
+
+.craft__content {
+    width: 100%;
+    height: 80vh;
+    min-height: 30rem;
+    border: 2px solid var(--linkCol);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    place-items: center;
+    overflow-x: hidden;
+}
+.craft {
+    max-width: 25rem;
+    height: 30rem;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.card {
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    padding: 0.5rem;
+    background: var(--bgCraftCard);
+    position: relative;
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.5);
+    z-index: 1;
+    transition: all 1s ease;
+    top: 0.5rem;
+    left: 0.5rem;
+    transform-origin: 50% 100%;
+    transform-style: preserve-3d;
+    transform: scale(0.75)
+    rotateX(35deg)
+    rotateY(-25deg)
+    translateZ(5rem)
+    translateY(-30%);
+}
+.card:hover {
+    transform: scale(1);
+}
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: inherit;
+}
+
+.card::after {
+    border: 0.5rem solid var(--linkColHov);
+    left: 5rem;
+    top: 2rem;
+    z-index: -1;
+}
+.card:hover::after {
+    left: -0.5rem;
+    top: -0.5rem;
+}
+
+.card::before {
+    background: var(--bgCraftCard);
+    clip-path: polygon(0 1%, 90% 10%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transition: all 1.25s ease;
+    width: 25%;
+    height: 25%;
+    top: 0;
+    right: 0;
+}
+.card:hover::before {
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card__desc {
+    width: 100%;
+    height: 90%;
+    color: var(--white);
+    padding: 1rem 0 2rem 0;
+    position: absolute;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.card__desc--title {
+    background: var(--linkCol);
+    color: var(--white);
+    font-size: 2rem;
+    transition: inherit;
+    height: 5rem;
+    padding: 1rem 0;
+    transform: translateY(20rem);
+}
+.card:hover .card__desc--title {
+    font-size: 2.25rem;
+    background: transparent;
+    transform: translateY(0);
+}
+
+.card__desc-prev, .card__desc--tags, .card__desc--info {
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    gap: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.2s ease, opacity 0.3s ease 0.5s;
+}
+.card:hover .card__desc-prev, .card:hover  .card__desc--tags, .card:hover  .card__desc--info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card__desc-prev a {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #eee;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.35s;
+    background: #fff;
+    color: var(--linkColHov);
+}
+.card__desc-prev a:first-child {
+    transform: translateX(-75%);
+}
+.card__desc-prev a:last-child {
+    transform: translateX(75%);
+}
+.card:hover .card__desc-prev a {
+    transform: translateX(0%);
+    transition-delay: 0.2s;
+}
+.card__desc-prev a:hover {
+    border-color: var(--linkColHov);
+}
+
+.card__desc--info {
+    padding: 1rem;
+}
+
+.card__desc--tags span {
+    font-size: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 2.5rem;
+}
+
+/*****    Crafts content scroll bar
+*************/
+.craft__content {
+    scrollbar-width: thin;
+}
+.craft__content::-webkit-scrollbar {
+    width: 1rem;
+}
+/* .craft__content::-webkit-scrollbar-track {
+  background: var(--linkCol);
+} */
+.craft__content::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 2rem;
+    border: 0.3rem solid var(--linkColHov);
+}

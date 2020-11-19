@@ -1,21 +1,33 @@
 /*        HOME Section
 ************************************/
 .home {
-    background: url(img/code-icon.svg);
+    background-image: url(img/code-icon.svg), var(--bgHome);
     background-repeat: no-repeat;
     background-position: 95% 95%;
-    background-size: 15rem;
+    background-size: 15rem, 100%;
 }
+.home::before {
+    background: url(img/code-icon.svg), var(--bgHomeDark);
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-size: 15rem, 100%;
+}
+
+
 .home__header {
     height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .home__header .logo {
     font-size: 2.5rem;
     margin-right: auto;
     transition: var(--transition);
+}
+.dark .logo {
+    transform: rotateY(180deg);
 }
 
 .home__header--nav {
@@ -146,7 +158,7 @@
         height: 100%;
         position: absolute;
         top: 0;
-        background: var(--navBg);
+        background: var(--bgNav);
         z-index: -1;
         transition: all 0.5s ease-in;
         transition-delay: 0.75s;

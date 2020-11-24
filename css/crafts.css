@@ -6,8 +6,7 @@
 }
 
 .crafts__btn {
-    min-height: 15vh;
-    padding: 1.5rem 0;
+    min-height: 20vh;
 
     display: flex;
     justify-content: center;
@@ -27,10 +26,13 @@
     border-radius: 1rem;
     transition: all 0.5s ease;
 }
-.btnCraft:hover {
+.btnCraft:hover,
+.btnCraft-active {
     transform: scale(1.1);
+    color: var(--white);
     background: var(--linkColHov);
 }
+
 .btnCraft:hover,
 .dark .btnCraft {
     color: var(--white);
@@ -39,9 +41,10 @@
 
 .craft__content {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     min-height: 30rem;
-    border: 2px solid var(--linkCol);
+    border-left: 2px solid var(--linkCol);
+
     border-radius: 1.2rem;
     padding: 2rem;
     display: grid;
@@ -87,8 +90,8 @@
 
 .card::after {
     border: 0.5rem solid var(--linkColHov);
-    left: 5rem;
-    top: 2rem;
+    left: 3rem;
+    top: 3rem;
     z-index: -1;
 }
 .card:hover::after {

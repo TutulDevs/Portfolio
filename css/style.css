@@ -34,6 +34,7 @@ main {
 .section {
     width: 100%;
     min-height: 100vh;
+    padding-bottom: 1rem;
     position: relative;
     z-index: 1;
     transition: all var(--transition);
@@ -47,16 +48,21 @@ main {
     opacity: 0;
     transition: all var(--transition);
 }
-.section > * {
-    padding: 0 5%;
+.section .content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section__header {
     /* border:1px solid purple; */
-
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
     text-align: center;
     font-size: 4rem;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Lobster Two', 'Open Sans', cursive;
+    color: var(--linkColHov);
     background: -webkit-linear-gradient(-115deg, var(--linkColHov), var(--linkCol));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

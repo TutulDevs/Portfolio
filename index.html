@@ -9,13 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
     <title>TutulDevs</title>
-    <link rel="stylesheet" href="vars.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/vars.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     
-    <link rel="stylesheet" href="home.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="crafts.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/home.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/crafts.css" type="text/css" media="all" />
 <style type="text/css" media="all">
-
 
 
 </style>
@@ -25,7 +24,8 @@
     <main class="main">
         <!-- Home start -->
         <section id="home" class="section home">
-            <div class="home__header">
+            <div class="content">
+                <div class="home__header">
                 <h2 class="logo">✌️</h2>
 
                 <ul class="home__header--nav">
@@ -46,34 +46,32 @@
                     <span class="box box2"></span>
                     <span class="sr-only">Toggle Navigation Menu</span>
                 </button>
-            </div>
-            <!-- HOME__Header -->
+            </div><!-- HOME__Header -->
 
-            <div class="home__body">
+                <div class="home__body">
                 <h2>Hi there 👋</h2>
                 <h1 class="home__body--title">I'm
                     <span class="name">Tutul</span>
                 </h1>
                 <h4>I believe in JavaScript</h4>
+            </div><!-- HOME-Body -->
             </div>
-            <!-- HOME-Body -->
-
         </section>
         <!-- // HOME end -->
         
         <!-- Crafts start -->
         <section id="crafts" class="section crafts">
-            <div class="section__header">
+            <div class="content">
+                <div class="section__header">
                 <h1>Crafts</h1>
             </div>
-            <div class="crafts__btn">
-                <button class="btnCraft" data-tag="all">All</button>
+                <div class="crafts__btn">
+                <button class="btnCraft btnCraft-active" data-tag="all">All</button>
                 <button class="btnCraft" data-tag="css">CSS</button>
                 <button class="btnCraft" data-tag="javascript">JavaScript</button>
-                <button class="btnCraft" data="react">React</button>
-            </div>
-            <!-- Crafts Content start -->
-            <div class="craft__content">
+                <button class="btnCraft" data="react" style="display:none;">React</button>
+            </div><!-- Crafts Content start -->
+                <div class="craft__content">
                 <div class="craft" data-tag="css">
                     <div class="card">
                     
@@ -204,10 +202,10 @@
                         </div> <!-- card__desc -->  
                     </div> <!-- card  -->
                 </div><!-- end craft -->
+            </div><!-- Crafts content end -->
             </div>
-            <!-- Crafts content end -->
         </section>
-        <!-- -->
+        <!-- // CRAFTS End -->
         
     </main>
 

@@ -5,9 +5,8 @@ const menuBtn = document.querySelector('.menu__btn');
 ///////////////////     Dark Mode
 btn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
-}
+});
 
-);
 
 ///////////////////     Nav Menu
 menuBtn.addEventListener('click', () => {
@@ -21,24 +20,32 @@ const crafts = document.querySelectorAll('.craft');
 
 function filterCrafts () {
 
-    // get the btn Text in case insensetive way
-    // this = button that got clicked
-    let btnName = this.dataset.tag;
+    // active class
+    // 1. remove the class from all, 2. add on the clicked
+    btnCraft.forEach(li => {
+        li.classList.remove('btnCraft-active');
+    });
+    this.classList.add('btnCraft-active');
 
+    // filter the cards
     crafts.forEach(craft => {
 
-        // get the dataset, lowercase if needed
-        const tag = craft.dataset.tag;
-
-        // store the tag & the all for all the el
-        const names = [tag, 'all'];
-
-        // IF btn name = names , show || hide
-        names.includes(btnName) ?
-        craft.style.display = 'grid':
+        // IF the btn's tag == card's tag || all , show || hide
+        [craft.dataset.tag, 'all'].includes(this.dataset.tag) ?
+        craft.style.display = 'block':
         craft.style.display = 'none';
-
-    }); // end of cards
+    });
 }
 
+
+// btnCraft.forEach(btn => {
+//   btn.onclick = function() {
+//         btnCraft.forEach(li => {
+//             li.classList.remove('btnCraft-active');
+//         });
+//         btn.classList.add('btnCraft-active');
+//     }
+// });
+
+// filter
 btnCraft.forEach(btn => btn.addEventListener('click', filterCrafts));

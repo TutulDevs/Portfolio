@@ -1,0 +1,60 @@
+.about {
+    background-color: #ffffff;
+    background-image: var(--bgAbout);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+}
+.about::before {
+    background-color: #343A40;
+    background-image: var(--bgAbout);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about__content {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+.about__info {
+    background-image: var(--bgAboutInfo);
+    max-width: 50rem;
+    width: 100%;
+    min-height: 25rem;
+    margin: 1rem auto 2rem auto;
+    transform: rotate(-2deg);
+    transform-origin: 50%;
+    border-radius: 1.5rem;
+    padding: 2rem 2rem;
+    position: relative;
+    box-shadow: 0px 1.5rem 2rem rgba(0,0,0,0.25);
+}
+
+.about__info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 100%;
+    border-radius: 1.5rem 0 0 1.5rem;
+
+    background: url(../img/pen.svg);
+    background-repeat: no-repeat;
+    background-position: 48% 50%;
+    background-size: 25rem;
+}
+
+.about__info p {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.about__info p:first-child:first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+}

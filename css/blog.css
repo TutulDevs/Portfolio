@@ -1,12 +1,13 @@
 .blog {
-    background-color: var(--white);
+    background-color: #f8f8f8;
     background-image: var(--bgBlog);
     background-repeat: no-repeat;
     background-position: top left;
     /* background-attachment: fixed; */
 }
+
 .blog::before {
-    background-color: #202C39;
+    background-color: #212529;
     background-image: var(--bgBlog);
     background-repeat: no-repeat;
     background-position: top left;
@@ -18,13 +19,14 @@
     margin-bottom: 3rem;
 }
 .blogs {
+    min-height: 60vh;
     display: grid;
-    gap: 1rem;
-    place-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
 }
 .blogs__post {
-    width: 90%;
-    margin-left: 10%;
+    width: 100%;
     padding: 0.5rem 1rem;
 }
 .blogs__date {
@@ -32,6 +34,7 @@
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 .blogs__link {
     background: var(--linkColHov);
     color: var(--white);
@@ -49,7 +52,6 @@
 
 .blogs__hashnode {
     width: 100%;
-    margin: 1rem 0;
     min-height: 20vh;
     display: grid;
     place-items: center;

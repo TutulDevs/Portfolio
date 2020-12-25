@@ -1,15 +1,11 @@
 .about {
-    background-color: #ffffff;
+    background-color: var(--white);
     background-image: var(--bgAbout);
-    background-attachment: fixed;
-    background-size: cover;
-    color: #333;
+    color: var(--black);
 }
 .about::before {
-    background-color: #343A40;
+    background-color: var(--bgDark);
     background-image: var(--bgAbout);
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .about__content {

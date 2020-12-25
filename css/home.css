@@ -1,13 +1,13 @@
 /*        HOME Section
 ************************************/
 .home {
-    background-image: url(../img/code-icon.svg), var(--bgHome);
+    background-image: url(../img/code-icon.svg);
     background-repeat: no-repeat;
     background-position: 95% 95%;
     background-size: 15rem, 100%;
 }
 .home::before {
-    background: url(../img/code-icon.svg), var(--bgHomeDark);
+    background-image: url(../img/code-icon.svg);
     background-repeat: no-repeat;
     background-position: 95% 95%;
     background-size: 15rem, 100%;

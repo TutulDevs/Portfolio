@@ -18,6 +18,25 @@
     <link rel="stylesheet" href="css/about.css" type="text/css" media="all" />    
 <style type="text/css" media="all">
 
+/* #about, #crafts, #blog {display:none;} */
+
+
+.skills-content {min-height:80vh; 
+    display: flex;flex-flow: row wrap;justify-content: space-evenly; align-items: center;align-content: center; 
+}
+
+.skills-box { width:20rem; min-height:15rem; margin:1rem 2.5rem; text-align:center;}
+.skill-img { filter: drop-shadow(0 0 0px var(--linkCol)); max-width:100%;}
+.skill-name {color:var(--linkColHov) ;padding:0.25rem}
+
+
+
+@media screen and (max-width:768px) {
+    .skills-box {width:12rem;margin:1rem 1.5rem;}
+}
+@media screen and (max-width: 420px) {
+    .skills-box {width:8rem; margin:1rem;}
+}
 
 
 
@@ -67,13 +86,12 @@
         
         <!-- About Start -->
         <section id="about" class="section about">
-            <div class="content">
-                <div class="section__header">
+            <div class="section__header">
                     <h1>
                         About
                     </h1>
-                </div>
-                
+            </div>
+            <div class="content">
                 <div class="about__content">
                 <div class="about__info">
                     <p>I'm a self-taught front-end developer, belongs to Bangladesh. In the first quarter of this year I started teaching myself front-end development with the help of different teachers in the internet.</p>
@@ -83,14 +101,59 @@
             </div>
         </section>
         <!-- // ABOUT end -->
+        
+        <!-- Skills Start -->
+        <section id="skills" class="section skills">
+            <div class="section__header">
+                    <h1>
+                        Skills 
+                    </h1>
+            </div>
+            <div class="content">
+                <div class="skills-content">
+                    <div class="skills-box">
+                        <img src="icons/html.svg" alt="HTML5" title="HTML5" class="skill-img">
+                        <p class="skill-name">HTML5</p>
+                    </div>
+                    <div class="skills-box">
+                        <img src="icons/css.svg" alt="CSS3" title="CSS3" class="skill-img">
+                        <p class="skill-name">CSS3</p>
+                    </div>
+                    <div class="skills-box">
+                        <img src="icons/bootstrap.svg" alt="Bootstrap" title="Bootstrap" class="skill-img">
+                        <p class="skill-name">Bootstrap</p>
+                    </div>
+                    <div class="skills-box">
+                        <img src="icons/sass.svg" alt="SASS" title="SASS" class="skill-img">
+                        <p class="skill-name">SASS</p>
+                    </div>
+                    <div class="skills-box">
+                        <img src="icons/js.svg" alt="JavaScript" title="JavaScript" class="skill-img">
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                    <div class="skills-box" style="display:none;">
+                        <img src="icons/react.svg" alt="Reactjs" title="Reactjs" class="skill-img">
+                        <p class="skill-name">Reactjs</p>
+                    </div>
+                    <div class="skills-box">
+                        <img src="icons/git.svg" alt="Git" title="Git" class="skill-img">
+                        <p class="skill-name">Git</p>
+                    </div>
+                    <div class="skills-box">
+                        <img src="icons/npm.svg" alt="npm" title="npm" class="skill-img">
+                        <p class="skill-name">npm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // Skills end -->
 
         <!-- Crafts start -->
         <section id="crafts" class="section crafts">
-            <div class="content">
-                <div class="section__header">
+            <div class="section__header">
                     <h1>Crafts</h1>
-                </div>
-
+            </div>
+            <div class="content">
                 <div class="crafts__btn">
                     <button class="btnCraft btnCraft-active" data-tag="all">All</button>
                     <button class="btnCraft" data-tag="css">CSS</button>
@@ -262,11 +325,10 @@
 
         <!-- Blog Start -->
         <section id="blog" class="section blog">
+            <div class="section__header">
+                    <h1>Blogs</h1>
+            </div>
             <div class="content">
-                <div class="section__header">
-                    <h1>Recent Blogs</h1>
-                </div>
-
                 <div class="blogs">
                     <!--
                                         <div class="blogs__post">

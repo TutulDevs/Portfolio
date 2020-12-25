@@ -1,13 +1,12 @@
 .blog {
-    background-color: #f8f8f8;
+    background-color: var(--white);
     background-image: var(--bgBlog);
     background-repeat: no-repeat;
     background-position: top left;
-    /* background-attachment: fixed; */
 }
 
 .blog::before {
-    background-color: #212529;
+    background-color: var(--bgDark);
     background-image: var(--bgBlog);
     background-repeat: no-repeat;
     background-position: top left;

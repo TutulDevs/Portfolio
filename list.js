@@ -25,17 +25,12 @@ const blogs = document.querySelector('.blogs');
 function displayBlog(blogs, arr = []) {
     blogs.innerHTML = arr.map((el, i) => {
         return `
-        <div class="blogs__post">
-        <p class="blogs__date">
-        ${el.date}
-        </p>
-        <h2 class="blogs__title">
-        ${el.title}
-        </h2>
-        <a href="${el.url}" target="_blank" class="blogs__link">
-        Read More
-        </a>
-        </div>`;
+        <div class="blogs-post">
+        <p class="blogs-date">${el.date}</p>
+        <h3 class="blogs-title">${el.title}</h3>
+        <a href="${el.url}" target="_blank" class="blogs-link">Read More</a>
+        </div>
+        `;
     })
     .join('');
 }

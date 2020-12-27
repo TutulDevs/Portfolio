@@ -1,0 +1,145 @@
+.contact {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    padding-bottom: 2rem;
+}
+
+/**********        Form
+********************************/
+.form-box {
+    margin-top: 2rem;
+}
+.form {
+    width: 80%;
+    min-height: 30rem;
+    padding-top: 3rem;
+    color: var(--gray);
+    background: var(--bgAboutInfo);
+    position: relative;
+    z-index: 1;
+}
+.form::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: -1%;
+    width: 104%;
+    height: 4rem;
+    background: #222831;
+    border-radius: 2.5rem;
+    transform: rotate(4deg);
+    transition: all var(--speed) ease;
+}
+.form::after {
+    content: '';
+    z-index: -7;
+    position: absolute;
+    top: 1.5rem;
+    left: -0.75rem;
+    width: 5rem;
+    height: 5rem;
+
+    background-image: url(../icons/letterbox.png);
+    background-repeat: no-repeat;
+    background-size: 4rem, 100%;
+}
+
+.light .form::before {
+    background: #F5F5F5;
+}
+
+.form-inputs {
+    width: 100%;
+    min-height: 10rem;
+    position: relative;
+    left: 2.5rem;
+    padding: 1rem 1.5rem;
+    background: var(--bg-nav);
+    margin-top: 2rem;
+}
+.form-inputs input,
+.form-inputs textarea {
+    border: 1px solid var(--green);
+    border-radius: 0.5rem;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    margin-left: -0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: var(--white);
+    width: 100%;
+    transition: all var(-speed) ease;
+}
+.form-inputs textarea {
+    min-height: 10rem;
+}
+
+
+.form-inputs input:focus,
+.form-inputs textarea:focus {
+    outline-color: var(--green);
+    border-radius: 0;
+}
+
+.submit {
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    text-align: right;
+    border: 0.25rem solid var(--black);
+    border-radius: 0.5rem;
+    background: transparent;
+    font-size: 1.7rem;
+    position: relative;
+    right: -60%;
+    font-weight: bold;
+}
+
+
+/*******        Social
+***************************************/
+.social-title {
+    border-bottom: 1px solid var(--black);
+    margin-top: 2rem;
+}
+
+.social-icons {
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.social-icon {
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: block;
+    background-color: var(--green-dark);
+    transition: all var(--speed) ease-in-out;
+}
+.social-icon:hover {
+    background-color: var(--green);
+}
+.social-icon .social-img {
+    transition: inherit;
+    filter: drop-shadow(1px 0px 2px var(--green) );
+}
+.social-icon:hover .social-img {
+    transform: rotate(-10deg);
+}
+
+@media screen and (max-width:600px) {
+
+    .form-box {
+        margin-top: 4rem;
+    }
+
+    .social {
+        order: -1;
+    }
+}

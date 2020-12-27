@@ -1,50 +1,57 @@
-.crafts {
-    background-image: var(--bgCrafts);
-}
-.crafts::before {
-    background-image: var(--bgCraftsDark);
-}
-
-.crafts__btn {
+.crafts-btn, .crafts-more {
     min-height: 20vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-flow: row wrap;
 }
 
 .btnCraft {
     min-width: 10rem;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    color: var(--black);
+    color: var(--gray);
     background: transparent;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0.75rem 1.25rem;
-    border: 2px solid var(--linkColHov);
-    border-radius: 1rem;
-    transition: all 0.5s ease;
+    border: 2px solid var(--green-dark);
+    border-radius: 2.5rem;
+    transition: all var(--speed) ease;
+}
+.light .btnCraft {
+    color: var(--black);
 }
 .btnCraft:hover,
-.btnCraft-active {
-    transform: scale(1.1);
+.btnCraft-active,
+.light .btnCraft-active {
+    transform: scale(1.05);
     color: var(--white);
-    background: var(--linkColHov);
+    background: var(--green-dark);
 }
 
-.btnCraft:hover,
-.dark .btnCraft {
+.crafts-more a {
+    font-weight: bold;
+    margin: 0.25rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2.5rem;
     color: var(--white);
+    border: 2px solid var(--green);
+    background-color: var(--green-dark);
+    background-image: linear-gradient(-180deg, #60B99A,#0D6759 85%,#0B2E59);
+    transition: border var(--speed) ease-in;
+}
+.crafts-more a:hover {
+    border: 2px solid var(--green-dark);
 }
 
 
 .craft__content {
     width: 100%;
-    height: 60vh;
+    max-height: 60vh;
     min-height: 30rem;
-    margin-bottom: 2rem;
-    border-left: 2px solid var(--linkCol);
+    box-shadow: inset -0px -3px 10px -5px #777;
 
     border-radius: 1.2rem;
     padding: 2rem;
@@ -90,7 +97,7 @@
 }
 
 .card::after {
-    border: 0.5rem solid var(--linkColHov);
+    border: 0.5rem solid var(--green-dark);
     left: 3rem;
     top: 3rem;
     z-index: -1;
@@ -119,7 +126,6 @@
 .card__img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .card__desc {
     width: 100%;
@@ -136,7 +142,7 @@
 }
 
 .card__desc--title {
-    background: var(--linkCol);
+    background: var(--green);
     color: var(--white);
     font-size: 2rem;
     transition: inherit;
@@ -172,7 +178,7 @@
     transition: all 0.5s ease-in;
     transition-delay: 0.35s;
     background: #fff;
-    color: var(--linkColHov);
+    color: var(--green-dark);
 }
 .card__desc-prev a:first-child {
     transform: translateX(-75%);
@@ -185,7 +191,7 @@
     transition-delay: 0.2s;
 }
 .card__desc-prev a:hover {
-    border-color: var(--linkColHov);
+    border-color: var(--green-dark);
 }
 
 .card__desc--info {
@@ -212,7 +218,7 @@
   background: var(--linkCol);
 } */
 .craft__content::-webkit-scrollbar-thumb {
-    background-color: var(--black);
+    background-color: var(--green);
     border-radius: 2rem;
-    border: 0.3rem solid var(--linkColHov);
+    border: 0.3rem solid var(--green-dark);
 }

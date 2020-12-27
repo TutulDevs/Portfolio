@@ -1,0 +1,33 @@
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.skills-box {
+    width: 20rem;
+    min-height: 15rem;
+    margin: 1rem 2.5rem;
+    text-align: center;
+}
+
+.skill-name {
+    color: var(--green-dark);
+    padding: 0.25rem
+}
+
+
+
+@media screen and (max-width:768px) {
+    .skills-box {
+        width: 12rem;
+        margin: 1rem 1.5rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    .skills-box {
+        width: 8rem;
+        margin: 1rem;
+    }
+}

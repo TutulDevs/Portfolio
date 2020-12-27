@@ -1,22 +1,3 @@
-.blog {
-    background-color: var(--white);
-    background-image: var(--bgBlog);
-    background-repeat: no-repeat;
-    background-position: top left;
-}
-
-.blog::before {
-    background-color: var(--bgDark);
-    background-image: var(--bgBlog);
-    background-repeat: no-repeat;
-    background-position: top left;
-}
-
-
-
-.blog .section__header {
-    margin-bottom: 3rem;
-}
 .blogs {
     min-height: 60vh;
     display: grid;
@@ -24,42 +5,43 @@
     justify-content: center;
     align-content: center;
 }
-.blogs__post {
-    width: 100%;
-    padding: 0.5rem 1rem;
+.blogs-post {
+    padding: 0.5rem 0;
 }
-.blogs__date {
-    color: var(--linkColHov);
+.blogs-date {
+    color: var(--green-dark);
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-.blogs__link {
-    background: var(--linkColHov);
+.blogs-link {
+    background: var(--green-dark);
     color: var(--white);
-    padding: 0.5rem 1.5rem;
+    padding: 0.25rem 1.5rem;
     display: inline-block;
-    transition: all 0.5s ease-out;
+    transition: all var(--speed) ease-out;
     font-weight: 400;
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%, 0% 0%);
 }
-.blogs__link:hover {
+.blogs-link:hover {
     padding-left: 2rem;
-    background: var(--linkCol);
+    background: var(--green);
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
 }
 
-.blogs__hashnode {
-    width: 100%;
-    min-height: 20vh;
+
+.blogs-more {
+    width: 90%;
+    height: 20vh;
+    margin: 0 auto;
     display: grid;
     place-items: center;
     text-align: center;
 }
-.blogs__hashnode a {
-    color: var(--linkColHov);
-    transition: var(--transition);
+.blogs-more a {
+    color: var(--green-dark);
+    transition: color var(--speed) ease;
 }
-.blogs__hashnode a:hover {
-    color: var(--linkCol);
+.blogs-more a:hover {
+    color: var(--green);
 }

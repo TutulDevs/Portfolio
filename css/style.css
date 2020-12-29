@@ -26,12 +26,13 @@ body {
     line-height: 1.6;
     color: var(--gray);
     background: var(--bgDark);
-    transition: background var(--speed) ease;
+    transition: background var(--speed)  ease, color 0.5s ease;
 }
 
 .light {
     background: var(--white);
     color: var(--black);
+    transition: background var(--speed)  ease, color 0.5s ease;
 }
 
 .container {
@@ -46,7 +47,7 @@ ul {
 
 img {
     max-width: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 a {
@@ -70,7 +71,7 @@ button {
 .section {
     width: 100%;
     min-height: 100vh;
-    transition: background var(--speed) ease;
+    transition: background var(--speed)  ease, color 0.5s ease;
 }
 .section .container {
     min-height: 85vh;
@@ -88,7 +89,7 @@ button {
 
 .section-header {
     min-height: 15vh;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Lobster Two', 'Open Sans', cursive;
     color: var(--green);
     display: grid;
@@ -116,7 +117,7 @@ button {
     background-size: 5px 5px;
 }
 .footer-content {
-    height: 15vh;
+    height: 10vh;
     color: var(--white);
     font-size: 1.3rem;
     font-family: 'Lobster Two', cursive;

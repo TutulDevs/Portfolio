@@ -2,9 +2,10 @@ const $ = x => document.querySelector(x);
 
 
 // Publish the blog
+displayBlog($('.blogs'), blogposts);
 
 // Show the crafts
-
+displayCrafts($('.craft__content'), craftsArr);
 
 // show menu
 

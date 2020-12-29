@@ -10,10 +10,10 @@
 .logo {
     margin-right: auto;
     color: var(--green);
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     font-family: 'Lobster Two', cursive;
-    transition: var(--speed)ease;
+    transition: transform 1s ease;
 }
 .light .logo {
     transform: rotateY(180deg);
@@ -50,7 +50,7 @@
 
 .mode-toggler::after {
     content: '';
-    background: url(../img/mode.png) no-repeat;
+    background: url(../icons/mode.png) no-repeat;
     background-size: 100%;
     width: inherit;
     height: inherit;

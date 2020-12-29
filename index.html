@@ -18,223 +18,235 @@
     <link rel="stylesheet" href="css/crafts.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/blog.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/contact.css" type="text/css" media="all" />
-<style type="text/css" media="all">
+    <style type="text/css" media="all">
 
-/* #home, #about, #skills, #crafts, #blogs, #contact, .footer {display:none;} */
+        /*
+            Space for testing later.
+        */
 
-/*
-    To-Do 
-    1. Add crafts 
-    2. Update blogs 
-    3. Header bg on @media 
-    4. Add a back-to-top button for big screen
-
-*/
-</style>
+    </style>
 </head>
 <body>
 
-
-<header class="header">
-<div class="container header-content">
-    <h2 class="logo">️T</h2>
-    <ul class="nav">
-        <li><a href="#" class="link">Home</a></li>
-        <li><a href="#about" class="link">About</a></li>
-        <li><a href="#skills" class="link">Skills</a></li>
-        <li><a href="#crafts" class="link">Crafts</a></li>
-        <li><a href="#blogs" class="link">Blogs</a></li>
-        <li><a href="#contact" class="link">Contact</a></li>
-    </ul>
-    <button class="mode-toggler">
-        <!-- 🛡 -->️
-        <span class="sr-only">toggle mode</span>
-    </button>
-    <button class="nav-toggler">
-                        <span class="box box1"></span>
-                        <span class="box box2"></span>
-                        <span class="sr-only">Toggle Navigation Menu</span>
-    </button>
-</div>
-</header>
-
-<main class="main">
-
-<section id="home">
-    <div class="container home">
-        <span class="greeting">Hi there 👋</span>
-        <h1 class="home-title">I'm
-            <span class="name">Tutul</span>
-        </h1>
-        <h4>I believe in JavaScript</h4>
-    </div>
-</section>    
-
-<section id="about" class="section">
-    <div class="section-header">
-        <h1 class="section-header-title">About</h1>
-    </div>
-    <div class="container about">
-       <div class="about-info">
-                    <p>
-                        Hello, I'm Tutul. I belong to Bangladesh. At the very beginning of COVID-19, I began to teach myself frontend development after almost ten years of procrastinating. I'm passionate how the  
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque culpa distinctio libero rerum id. Optio labore neque aperiam, quos deserunt.</p>
-       </div> 
-    </div>
-</section>
-
-<section id="skills" class="section">
-    <div class="section-header">
-        <h1 class="section-header-title">Skills</h1>
-    </div>
-    <div class="container skills">
-        <div class="skills-box">
-                        <img src="icons/html.svg" alt="HTML5" title="HTML5" class="skill-img">
-                        <p class="skill-name">HTML5</p>
-                    </div>
-                    <div class="skills-box">
-                        <img src="icons/css.svg" alt="CSS3" title="CSS3" class="skill-img">
-                        <p class="skill-name">CSS3</p>
-                    </div>
-                    <div class="skills-box">
-                        <img src="icons/bootstrap.svg" alt="Bootstrap" title="Bootstrap" class="skill-img">
-                        <p class="skill-name">Bootstrap</p>
-                    </div>
-                    <div class="skills-box">
-                        <img src="icons/sass.svg" alt="SASS" title="SASS" class="skill-img">
-                        <p class="skill-name">SASS</p>
-                    </div>
-                    <div class="skills-box">
-                        <img src="icons/js.svg" alt="JavaScript" title="JavaScript" class="skill-img">
-                        <p class="skill-name">JavaScript</p>
-                    </div>
-                    <div class="skills-box" style="display:none;">
-                        <img src="icons/react.svg" alt="Reactjs" title="Reactjs" class="skill-img">
-                        <p class="skill-name">Reactjs</p>
-                    </div>
-                    <div class="skills-box">
-                        <img src="icons/git.svg" alt="Git" title="Git" class="skill-img">
-                        <p class="skill-name">Git</p>
-                    </div>
-                    <div class="skills-box">
-                        <img src="icons/npm.svg" alt="npm" title="npm" class="skill-img">
-                        <p class="skill-name">npm</p>
-                    </div>
-    </div>
-</section>
- 
-<section id="crafts" class="section">
-    <div class="section-header">
-        <h1 class="section-header-title">Crafts</h1>
-    </div>
-    <div class="container crafts">
-        <div class="crafts-btn">
-            <button class="btnCraft btnCraft-active" data-tag="all">All</button>
-            <button class="btnCraft" data-tag="css">CSS</button>
-            <button class="btnCraft" data-tag="js">JavaScript</button>
-            <button class="btnCraft" data="react">React</button>
+    <header class="header header-shade">
+        <div class="container header-content">
+            <h2 class="logo">️T</h2>
+            <ul class="nav">
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#about" class="link">About</a></li>
+                <li><a href="#skills" class="link">Skills</a></li>
+                <li><a href="#crafts" class="link">Crafts</a></li>
+                <li><a href="#blogs" class="link">Blogs</a></li>
+                <li><a href="#contact" class="link">Contact</a></li>
+            </ul>
+            <button class="mode-toggler">
+                <!-- 🛡 -->️
+                <span class="sr-only">toggle mode</span>
+            </button>
+            <button class="nav-toggler">
+                <span class="box box1"></span>
+                <span class="box box2"></span>
+                <span class="sr-only">Toggle Navigation Menu</span>
+            </button>
         </div>
-        
-        <!-- Crafts Content start -->
-        <div class="craft__content">
-           <!-- via js  -->
-        </div>
-        <!-- Crafts content end -->
-        
-        <div class="crafts-more">
-            <a href="https://LoveCSS.netlify.app">All Websites</a> 
-            <a href="https://all-js.netlify.app">50 JavaScript Apps</a>
-            <a href="https://codepen.io/TutulDevs/pens/popular">All CSS Components</a>  
-        </div>
-        
-    </div>
-</section>   
+    </header>
 
-<section id="blogs" class="section">
-    <div class="section-header">
-        <h1 class="section-header-title">Blogs</h1>
-    </div>
-    <div class="container blogs">
-        <!--
-                                        <div class="blogs-post">
-                                            <p class="blogs-date">19 Nov 2020</p>
-                                            <h2 class="blogs-title">How To Fix CSS Transtion on Gradient Backgrounds</h2>
-                                            <a href="#" target="_blank" class="blogs-link">Read More</a>
-                                        </div>
-        -->
-    </div>
-    <div class="blogs-more">
-        <h4>
-            Follow me on <a href="https://tutuldevs.hashnode.dev/">Hashnode</a> for more blog posts.
-        </h4>
-    </div>
-</section>
+    <main class="main">
 
-<section id="contact" class="section">
-    <div class="section-header">
-        <h1 class="section-header-title">Contact</h1>
-    </div>
-    <div class="container contact">
-        <div class="form-box">
-            <form class="form">
-                <div class="form-inputs">
-                    <label for="name">Name <br />
-                        <input type="text" name="name" id="name" placeholder="John Doe" />
-                    </label>
-                    <label for="email">Email <br>
-                        <input type="email" name="email" id="email" placeholder="johndoe@mail.com" required />
-                    </label>
-                    <label for="message"> Message <br>
-                        <textarea name="message" id="message" placeholder="Type your message..."></textarea>
-                    </label>
-                </div>
-                <button type="submit" class="submit">Send</button>
-            </form>
-        </div>
-        <div class="social">
-            <h2 class="social-title">Let's talk.</h2>
-            <div class="social-icons">
-                <a href="https://twitter.com/TutulDevs" class="social-icon">
-                    <img src="./icons/twitter.svg" alt="Twitter" title="Twitter" class="social-img">
-                    <span class="sr-only">Twitter</span>
-                </a>
-                <a href="https://github.com/TutulDevs" class="social-icon">
-                    <img src="./icons/github.svg" alt="GitHub" title="GitHub" class="social-img">
-                    <span class="sr-only">GitHub</span>
-                </a>
-                <a href="https://tutuldevs.hashnode.dev/" class="social-icon">
-                    <img src="./icons/hashnode.svg" alt="Hashnode" title="Hashnode" class="social-img">
-                    <span class="sr-only">Hashnode</span>
-                </a>
-                <a href="https://codepen.io/TutulDevs" class="social-icon">
-                    <img src="./icons/codepen.svg" alt="CodePen" title="CodePen" class="social-img">
-                    <span class="sr-only">CodePen</span>
-                </a>
-                <a href="https://codewars.com/users/TutulDevs" class="social-icon">
-                    <img src="./icons/codewars.svg" alt="CodeWars" title="CodeWars" class="social-img">
-                    <span class="sr-only">CodeWars</span>
-                </a>
+        <section id="home">
+            <div class="container home">
+                <span class="greeting">Hi there 👋</span>
+                <h1 class="home-title">I'm
+                    <span class="name">Tutul</span>
+                </h1>
+                <h4>I believe in JavaScript</h4>
             </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-header">
+                <h1 class="section-header-title">About</h1>
+            </div>
+            <div class="container about">
+                <div class="about-info">
+                    <p>
+                        Hello, I'm Tutul. I belong to Bangladesh. At the very beginning of COVID-19, I began to teach myself frontend development after almost ten years of procrastinating. I'm passionate how the
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque culpa distinctio libero rerum id. Optio labore neque aperiam, quos deserunt.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h1 class="section-header-title">Skills</h1>
+            </div>
+            <div class="container skills">
+                <div class="skills-box">
+                    <img src="icons/html.svg" alt="HTML5" title="HTML5" class="skill-img">
+                    <p class="skill-name">
+                        HTML5
+                    </p>
+                </div>
+                <div class="skills-box">
+                    <img src="icons/css.svg" alt="CSS3" title="CSS3" class="skill-img">
+                    <p class="skill-name">
+                        CSS3
+                    </p>
+                </div>
+                <div class="skills-box">
+                    <img src="icons/bootstrap.svg" alt="Bootstrap" title="Bootstrap" class="skill-img">
+                    <p class="skill-name">
+                        Bootstrap
+                    </p>
+                </div>
+                <div class="skills-box">
+                    <img src="icons/sass.svg" alt="SASS" title="SASS" class="skill-img">
+                    <p class="skill-name">
+                        SASS
+                    </p>
+                </div>
+                <div class="skills-box">
+                    <img src="icons/js.svg" alt="JavaScript" title="JavaScript" class="skill-img">
+                    <p class="skill-name">
+                        JavaScript
+                    </p>
+                </div>
+                <div class="skills-box" style="display:none;">
+                    <img src="icons/react.svg" alt="Reactjs" title="Reactjs" class="skill-img">
+                    <p class="skill-name">
+                        Reactjs
+                    </p>
+                </div>
+                <div class="skills-box">
+                    <img src="icons/git.svg" alt="Git" title="Git" class="skill-img">
+                    <p class="skill-name">
+                        Git
+                    </p>
+                </div>
+                <div class="skills-box">
+                    <img src="icons/npm.svg" alt="npm" title="npm" class="skill-img">
+                    <p class="skill-name">
+                        npm
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="crafts" class="section">
+            <div class="section-header">
+                <h1 class="section-header-title">Crafts</h1>
+            </div>
+            <div class="container crafts">
+                <div class="crafts-btn">
+                    <button class="btnCraft btnCraft-active" data-tag="all">All</button>
+                    <button class="btnCraft" data-tag="css">CSS</button>
+                    <button class="btnCraft" data-tag="js">JavaScript</button>
+                    <button class="btnCraft" data-tag="react">React</button>
+                </div>
+
+                <!-- Crafts Content start -->
+                <div class="craft__content">
+                    <!-- via js  -->
+                </div>
+                <!-- Crafts content end -->
+
+                <div class="crafts-more">
+                    <a href="https://LoveCSS.netlify.app">All Websites</a>
+                    <a href="https://all-js.netlify.app">50 JavaScript Apps</a>
+                    <a href="https://codepen.io/TutulDevs/pens/popular">All CSS Components</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="blogs" class="section">
+            <div class="section-header">
+                <h1 class="section-header-title">Blogs</h1>
+            </div>
+            <div class="container blogs">
+                <!--
+                                                                                                        <div class="blogs-post">
+                                                                                                            <p class="blogs-date">19 Nov 2020</p>
+                                                                                                            <h2 class="blogs-title">How To Fix CSS Transtion on Gradient Backgrounds</h2>
+                                                                                                            <a href="#" target="_blank" class="blogs-link">Read More</a>
+                                                                                                        </div>
+                                                                        -->
+            </div>
+            <div class="blogs-more">
+                <h4>
+                    Follow me on <a href="https://tutuldevs.hashnode.dev/">Hashnode</a> for more blog posts.
+                </h4>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h1 class="section-header-title">Contact</h1>
+            </div>
+            <div class="container contact">
+                <div class="form-box">
+                    <form class="form">
+                        <div class="form-inputs">
+                            <label for="name">Name <br />
+                                <input type="text" name="name" id="name" placeholder="John Doe" />
+                            </label>
+                            <label for="email">Email <br>
+                                <input type="email" name="email" id="email" placeholder="johndoe@mail.com" required />
+                            </label>
+                            <label for="message"> Message <br>
+                                <textarea name="message" id="message" placeholder="Type your message..."></textarea>
+                            </label>
+                        </div>
+                        <button type="submit" class="submit">Send</button>
+                    </form>
+                </div>
+                <div class="social">
+                    <h2 class="social-title">Let's talk.</h2>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/TutulDevs" class="social-icon">
+                            <img src="./icons/twitter.svg" alt="Twitter" title="Twitter" class="social-img">
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="https://github.com/TutulDevs" class="social-icon">
+                            <img src="./icons/github.svg" alt="GitHub" title="GitHub" class="social-img">
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                        <a href="https://tutuldevs.hashnode.dev/" class="social-icon">
+                            <img src="./icons/hashnode.svg" alt="Hashnode" title="Hashnode" class="social-img">
+                            <span class="sr-only">Hashnode</span>
+                        </a>
+                        <a href="https://codepen.io/TutulDevs" class="social-icon">
+                            <img src="./icons/codepen.svg" alt="CodePen" title="CodePen" class="social-img">
+                            <span class="sr-only">CodePen</span>
+                        </a>
+                        <a href="https://codewars.com/users/TutulDevs" class="social-icon">
+                            <img src="./icons/codewars.svg" alt="CodeWars" title="CodeWars" class="social-img">
+                            <span class="sr-only">CodeWars</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>
+                @Copyright <span class="year">2077</span>
+            </p>
+            <p>
+                Made with ❤️ by <a href="https://twitter.com/TutulDevs">Tutul</a> with these <a href="https://github.com/TutulDevs/Portfolio/blob/master/Resources.md">resources</a>.
+            </p>
         </div>
-    </div>
-</section>
+    </footer>
 
-</main>
+    <a href="#" class="top">🎈</a>
 
-<footer class="footer">
-    <div class="container footer-content">
-        <p>
-            @Copyright <span class="year">2077</span>
-        </p>
-        <p>
-            Made with ❤️ by <a href="https://twitter.com/TutulDevs">Tutul</a> with these <a href="https://github.com/TutulDevs/Portfolio/blob/master/Resources.md">resources</a>.
-        </p>
-    </div>
-</footer>    
-
-<script src="list.js" type="text/javascript" charset="utf-8"></script>
-<script src="app.js" type="text/javascript" charset="utf-8"></script>
-
+    <script src="list.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

@@ -133,3 +133,25 @@ button {
 .footer-content a {
     color: var(--green);
 }
+
+
+
+.top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transition: 0.5s ease;
+    display: inline-block;
+    font-size: 3.5rem;
+    z-index: 999;
+}
+.top:hover {
+    filter: drop-shadow(0 0 0.5rem
+    rgba(255,160,122, 0.75) );
+}
+
+@media screen and (max-width:768px) {
+    .top {
+        display: none;
+    }
+}

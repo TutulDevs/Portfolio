@@ -1,7 +1,11 @@
 .header {
     height: 15vh;
-
+    background: rgba(41,50,60,0.35);
 }
+.light .header {
+    background: rgba(255,255,255,0.35);
+}
+
 .header-content {
     height: 100%;
     display: flex;

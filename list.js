@@ -115,6 +115,15 @@ const craftsArr = [{
         desc: 'Provides any city\'s weather and time.',
         tech: 'JavaScript',
     },
+    {
+        tag: 'react',
+        name: 'Not Available',
+        src: 'img/err.png',
+        urlView: '#crafts',
+        urlCode: '#crafts',
+        desc: 'No Reactjs projects yet. I\'m currently learning it. ',
+        tech: 'Reactjs',
+    },
 ];
 
 

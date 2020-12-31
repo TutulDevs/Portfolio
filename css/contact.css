@@ -57,6 +57,7 @@
     padding: 1rem 1.5rem;
     background: var(--bg-nav);
     margin-top: 2rem;
+    box-shadow: -0.5rem -0 2rem -0.25rem rgba(0,0,0,0.5);
 }
 .form-inputs input,
 .form-inputs textarea {

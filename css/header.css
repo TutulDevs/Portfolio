@@ -1,5 +1,6 @@
 .header {
     height: 15vh;
+    transition: all var(--speed) ease;
     background: rgba(41,50,60,0.35);
 }
 .light .header {
@@ -75,11 +76,8 @@
         position: fixed;
         z-index: 999;
         width: 100%;
-        /* background: rgba(0,0,0,0.25); */
     }
-    /* .light .header {
-        background: rgba(255,255,255,0.25);
-    } */
+
 
 
     .nav-toggler {

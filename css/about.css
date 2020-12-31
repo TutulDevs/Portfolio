@@ -44,6 +44,7 @@
     line-height: 1;
 }
 
+
 .about-info a {
 
     padding: 0 0.1rem;
@@ -52,7 +53,7 @@
     background-color:var(--green);
     */
 
-    background: linear-gradient(tobottom,rgba(34, 205, 146,0.25)  0%, rgba(34, 205, 146,0.75) 100%);
+    background: linear-gradient(180deg,rgba(34, 205, 146,0.25)  0%, rgba(34, 205, 146,0.75) 100%);
     background-repeat: no-repeat;
     background-size: calc(100%) calc(50%);
     background-position: bottom;
